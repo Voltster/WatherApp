@@ -1,0 +1,33 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+  font-size: 100%;
+}
+
+
+
+@media screen and (max-width: 720px) {
+  html, body {
+    font-size: 60% ;
+  }
+}
