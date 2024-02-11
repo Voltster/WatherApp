@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header className="bg-[#0061abba] text-white py-4 text-center flex flex-row justify-around items-center  ">
@@ -9,11 +11,11 @@ const Header = () => {
       />
       <nav>
         <ul className="flex flex-row justify-around items-center gap-x-6  text-xl">
-          <li className="p-2 hover:border-b ">
-            <a href="#weatherApp">Weather App</a>
+          <li>
+            <Link to="/"  className="p-2 hover:border-b " >Weather App</Link>
           </li>
-          <li className="p-2 hover:border-b ">
-            <a href="#stateWise">State Wise</a>
+          <li >
+            <Link to="/stateWise"  className="p-2 hover:border-b ">State Wise</Link>
           </li>
         </ul>
       </nav>
